@@ -2,7 +2,7 @@ public class DataType {
   public static void main(String[] args) {
     // Data Types of the Java
 
-    // Commonly Uses Data Types
+    // Commonly Uses Data Types and Variables Creation 
     System.out.println("Data Types in Java Language:");
     int number = 12; // numeric with not contain any decimal
 
@@ -23,6 +23,8 @@ public class DataType {
     String name = "Amman"; // Sequence of characters, word
 
     System.out.println("Word: " + name);
+    
+    boolean login = true;
 
     int[] arr = {1,2,3,4,5,6}; // list of numeric value
 
