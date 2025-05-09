@@ -31,6 +31,8 @@ public class JavaLang {
 
     System.out.println(symbol.charValue()); // return the char value;
 
+    // After Character, it will go through ... Double, Float, Integer, Long, Number, Object
+
     // Math 
     double pi = Math.PI;
 
