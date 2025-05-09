@@ -31,7 +31,29 @@ public class JavaLang {
 
     System.out.println(symbol.charValue()); // return the char value;
 
+    // Math 
+    double pi = Math.PI;
 
+    double number = 23.44;
 
+    System.out.println(Math.round(number));
+
+    System.out.println(Math.ceil(number));
+    
+    System.out.println(Math.floor(number));
+    
+    System.out.println(Math.abs(number));
+    
+    System.out.println(Math.max(1, 3));
+    
+    System.out.println(Math.min(1, 4));
+
+    enum Direction {
+      NORTH, SOUTH, EAST, WEST;
+    }
+
+    Direction pos = Direction.NORTH;
+
+    System.out.println(post);
   }
 }
