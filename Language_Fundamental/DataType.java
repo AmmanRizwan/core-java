@@ -2,6 +2,7 @@ public class DataType {
   public static void main(String[] args) {
     // Data Types of the Java
 
+    // Commonly Uses Data Types
     System.out.println("Data Types in Java Language:");
     int number = 12; // numeric with not contain any decimal
 
