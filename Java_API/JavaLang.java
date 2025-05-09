@@ -16,6 +16,21 @@ public class JavaLang {
     // equals method
     System.out.println("Equality: " + paid.equals(true)); // if both are true then return true;
 
+    Byte num = 12;
+
+    System.out.println(num.byteValue()); // simple return the value
+
+    System.out.println(num.doubleValue()); // convert the byte into double type
+
+    System.out.println(num.intValue()); // convert the byte into int type
+
+    System.out.println(num.floatValue()); // convert the byte into float type
+
+    // Character
+    Character symbol = '@';
+
+    System.out.println(symbol.charValue()); // return the char value;
+
 
 
   }
