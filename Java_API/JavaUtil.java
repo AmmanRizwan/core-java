@@ -1,6 +1,8 @@
 import java.util.Stack;
 import java.util.Queue;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
+import java.util.Collections;
 
 public class JavaUtil {
   public static void main(String[] args) {
@@ -30,10 +32,50 @@ public class JavaUtil {
 
   queue.poll(); // remove from the index 0
 
-  // System.out.println(queue);
-  // System.out.println(queue.peek()); // return the index 0
-  // System.out.println(queue.isEmpty()); // return true if the queue is empty
-  // System.out.println(queue.size()); // return the length
-  // System.out.println(queue.contains("D")); // return bool if the object is in the queue
+  System.out.println(queue);
+  System.out.println(queue.peek()); // return the index 0
+  System.out.println(queue.isEmpty()); // return true if the queue is empty
+  System.out.println(queue.size()); // return the length
+  System.out.println(queue.contains("D")); // return bool if the object is in the queue
+
+  // Priority Queue
+  Queue<Double> pQueue = new PriorityQueue<Double>(Collections.reverseOrder()); // collections will have the method of reverse
+
+  pQueue.offer(5.0);
+  pQueue.offer(2.5);
+  pQueue.offer(1.5);
+  pQueue.offer(2.0);
+  pQueue.offer(3.0);
+
+  // priority queue will return in asc order 
+
+  while (!pQueue.isEmpty()) {
+    System.out.println(pQueue.poll()); // it will print all the value
+  }
+
+  // LinkedList
+  LinkedList<String> linkedList = new LinkedList<String>();
+
+  linkedlist.push("A");
+  linkedlist.push("B");
+  linkedlist.push("C");
+  linkedlist.push("D");
+  linkedlist.push("F");
+
+  linkedlist.add(3, "E");
+  linkedlist.remove("E");
+
+  System.out.println(linkedlist.indexOf("F"));
+
+  System.out.println(linkedlist.peekFirst());
+  System.out.println(linkedlist.peekLast());
+  linkedlist.addFirst("0");
+  linkedlist.addLast("G");
+
+  // String first = linkedlist.removeFirst();
+  // String last = linkedlist.removeLast();
+
+  System.out.println(linkedlist);
+
   }
 }
