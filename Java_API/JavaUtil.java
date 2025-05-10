@@ -3,6 +3,7 @@ import java.util.Queue;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Collections;
+import java.util.ArrayList;
 
 public class JavaUtil {
   public static void main(String[] args) {
@@ -76,6 +77,22 @@ public class JavaUtil {
   // String last = linkedlist.removeLast();
 
   System.out.println(linkedlist);
+
+  // ArrayList
+
+  ArrayList<Integer> array = new ArrayList<Integer>();
+
+  array.add(1);
+  array.add(2);
+  array.add(3);
+  array.add(4);
+
+  System.out.println(array.get(3));
+
+  array.get(1,1);
+  array.get(3, 0);
+
+  System.out.println(array);
 
   }
 }
