@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.IOException;
 import java.io.FileReader;
+import java.io.FileWriter;
 
 public class JavaIO {
   public static void main(String[] args) {
@@ -35,6 +36,20 @@ public class JavaIO {
     }
     catch (IOException e) {
       System.out.println("There is an error to open a file.");
+    }
+
+    // FileWriter
+    try {
+      FileWriter fileWriter = new FileWriter("file.txt");
+
+      fileWriter.write("I am writing some new content to know how can i add something in file.\n");
+      fileWriter.append("I will try to add something new in the new line....");
+
+      // file close is very important
+      fileWriter.close();
+    }
+    catch (IOException e) {
+      System.out.println("Something went wrong in the file io operation");
     }
   }
 }
