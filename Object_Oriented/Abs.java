@@ -5,7 +5,7 @@ public class Abs {
   }
 }
 
-// abstract class will never delcare as a Object
+// abstract class will never declare as a Object
 abstract class Human {
   private String name;
   private int age;

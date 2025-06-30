@@ -1,4 +1,3 @@
-import java.lang.Boolean;
 
 public class JavaLang {
   public static void main(String[] args) {
@@ -6,7 +5,7 @@ public class JavaLang {
     Boolean paid = false;
 
     // BooleanValue method
-    System.out.println("Value of paid: " + paid.BooleanValue()); // it simply return paid value; the value is false then it will return false;
+    System.out.println("Value of paid: " + paid.booleanValue()); // it simply return paid value; the value is false then it will return false;
 
     Boolean is_alive = false;
 
@@ -56,6 +55,6 @@ public class JavaLang {
 
     Direction pos = Direction.NORTH;
 
-    System.out.println(post);
+    System.out.println(pos);
   }
 }

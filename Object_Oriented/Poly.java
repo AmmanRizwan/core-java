@@ -65,7 +65,7 @@ class Developer extends Human {
 
   @Override
   public String toString() {
-    String result = "Name: " + this.name + " Age: " + this.age + " Lang: " + this.language;
+    String result = super.toString() + " Lang: " + this.language;
     return result;
   }
 }
@@ -90,7 +90,7 @@ class DevOps extends Developer {
 
   @Override
   public String toString() {
-    String result = "Name: " + this.name + " Age: " + this.age + " Lang: " + this.language + " CI/CD: " + this.ci_cd_tool;
+    String result = super.toString() + " CI/CD: " + this.ci_cd_tool;
     return result;
   }
 }

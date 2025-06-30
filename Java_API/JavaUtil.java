@@ -1,9 +1,9 @@
-import java.util.Stack;
-import java.util.Queue;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
-import java.util.Collections;
-import java.util.ArrayList;
+import java.util.Queue;
+import java.util.Stack;
 
 public class JavaUtil {
   public static void main(String[] args) {
@@ -54,30 +54,6 @@ public class JavaUtil {
     System.out.println(pQueue.poll()); // it will print all the value
   }
 
-  // LinkedList
-  LinkedList<String> linkedList = new LinkedList<String>();
-
-  linkedlist.push("A");
-  linkedlist.push("B");
-  linkedlist.push("C");
-  linkedlist.push("D");
-  linkedlist.push("F");
-
-  linkedlist.add(3, "E");
-  linkedlist.remove("E");
-
-  System.out.println(linkedlist.indexOf("F"));
-
-  System.out.println(linkedlist.peekFirst());
-  System.out.println(linkedlist.peekLast());
-  linkedlist.addFirst("0");
-  linkedlist.addLast("G");
-
-  // String first = linkedlist.removeFirst();
-  // String last = linkedlist.removeLast();
-
-  System.out.println(linkedlist);
-
   // ArrayList
 
   ArrayList<Integer> array = new ArrayList<Integer>();
@@ -89,8 +65,9 @@ public class JavaUtil {
 
   System.out.println(array.get(3));
 
-  array.get(1,1);
-  array.get(3, 0);
+  array.get(1);
+  array.get(3);
+  array.get(1);
 
   System.out.println(array);
 
